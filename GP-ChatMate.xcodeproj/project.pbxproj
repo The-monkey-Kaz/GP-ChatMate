@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1181354B29F1411D0084C8DB /* GP_ChatMateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181354A29F1411D0084C8DB /* GP_ChatMateApp.swift */; };
+		1181354D29F1411D0084C8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181354C29F1411D0084C8DB /* ContentView.swift */; };
+		1181354F29F1411E0084C8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1181354E29F1411E0084C8DB /* Assets.xcassets */; };
+		1181355229F1411E0084C8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1181355129F1411E0084C8DB /* Preview Assets.xcassets */; };
+		1181355C29F1411E0084C8DB /* GP_ChatMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181355B29F1411E0084C8DB /* GP_ChatMateTests.swift */; };
+		1181356629F1411E0084C8DB /* GP_ChatMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181356529F1411E0084C8DB /* GP_ChatMateUITests.swift */; };
+		1181356829F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1181355829F1411E0084C8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1181353F29F1411D0084C8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1181354629F1411D0084C8DB;
+			remoteInfo = "GP-ChatMate";
+		};
+		1181356229F1411E0084C8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1181353F29F1411D0084C8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1181354629F1411D0084C8DB;
+			remoteInfo = "GP-ChatMate";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1181354729F1411D0084C8DB /* GP-ChatMate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GP-ChatMate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1181354A29F1411D0084C8DB /* GP_ChatMateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateApp.swift; sourceTree = "<group>"; };
+		1181354C29F1411D0084C8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1181354E29F1411E0084C8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1181355129F1411E0084C8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1181355729F1411E0084C8DB /* GP-ChatMateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP-ChatMateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1181355B29F1411E0084C8DB /* GP_ChatMateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateTests.swift; sourceTree = "<group>"; };
+		1181356129F1411E0084C8DB /* GP-ChatMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP-ChatMateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1181356529F1411E0084C8DB /* GP_ChatMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateUITests.swift; sourceTree = "<group>"; };
+		1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1181354429F1411D0084C8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355429F1411E0084C8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355E29F1411E0084C8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1181353E29F1411D0084C8DB = {
+			isa = PBXGroup;
+			children = (
+				1181354929F1411D0084C8DB /* GP-ChatMate */,
+				1181355A29F1411E0084C8DB /* GP-ChatMateTests */,
+				1181356429F1411E0084C8DB /* GP-ChatMateUITests */,
+				1181354829F1411D0084C8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1181354829F1411D0084C8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1181354729F1411D0084C8DB /* GP-ChatMate.app */,
+				1181355729F1411E0084C8DB /* GP-ChatMateTests.xctest */,
+				1181356129F1411E0084C8DB /* GP-ChatMateUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1181354929F1411D0084C8DB /* GP-ChatMate */ = {
+			isa = PBXGroup;
+			children = (
+				1181354A29F1411D0084C8DB /* GP_ChatMateApp.swift */,
+				1181354C29F1411D0084C8DB /* ContentView.swift */,
+				1181354E29F1411E0084C8DB /* Assets.xcassets */,
+				1181355029F1411E0084C8DB /* Preview Content */,
+			);
+			path = "GP-ChatMate";
+			sourceTree = "<group>";
+		};
+		1181355029F1411E0084C8DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1181355129F1411E0084C8DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1181355A29F1411E0084C8DB /* GP-ChatMateTests */ = {
+			isa = PBXGroup;
+			children = (
+				1181355B29F1411E0084C8DB /* GP_ChatMateTests.swift */,
+			);
+			path = "GP-ChatMateTests";
+			sourceTree = "<group>";
+		};
+		1181356429F1411E0084C8DB /* GP-ChatMateUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1181356529F1411E0084C8DB /* GP_ChatMateUITests.swift */,
+				1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */,
+			);
+			path = "GP-ChatMateUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1181354629F1411D0084C8DB /* GP-ChatMate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1181356B29F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMate" */;
+			buildPhases = (
+				1181354329F1411D0084C8DB /* Sources */,
+				1181354429F1411D0084C8DB /* Frameworks */,
+				1181354529F1411D0084C8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GP-ChatMate";
+			productName = "GP-ChatMate";
+			productReference = 1181354729F1411D0084C8DB /* GP-ChatMate.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1181355629F1411E0084C8DB /* GP-ChatMateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1181356E29F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMateTests" */;
+			buildPhases = (
+				1181355329F1411E0084C8DB /* Sources */,
+				1181355429F1411E0084C8DB /* Frameworks */,
+				1181355529F1411E0084C8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1181355929F1411E0084C8DB /* PBXTargetDependency */,
+			);
+			name = "GP-ChatMateTests";
+			productName = "GP-ChatMateTests";
+			productReference = 1181355729F1411E0084C8DB /* GP-ChatMateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1181356029F1411E0084C8DB /* GP-ChatMateUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1181357129F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMateUITests" */;
+			buildPhases = (
+				1181355D29F1411E0084C8DB /* Sources */,
+				1181355E29F1411E0084C8DB /* Frameworks */,
+				1181355F29F1411E0084C8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1181356329F1411E0084C8DB /* PBXTargetDependency */,
+			);
+			name = "GP-ChatMateUITests";
+			productName = "GP-ChatMateUITests";
+			productReference = 1181356129F1411E0084C8DB /* GP-ChatMateUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1181353F29F1411D0084C8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1181354629F1411D0084C8DB = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					1181355629F1411E0084C8DB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1181354629F1411D0084C8DB;
+					};
+					1181356029F1411E0084C8DB = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 1181354629F1411D0084C8DB;
+					};
+				};
+			};
+			buildConfigurationList = 1181354229F1411D0084C8DB /* Build configuration list for PBXProject "GP-ChatMate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1181353E29F1411D0084C8DB;
+			productRefGroup = 1181354829F1411D0084C8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1181354629F1411D0084C8DB /* GP-ChatMate */,
+				1181355629F1411E0084C8DB /* GP-ChatMateTests */,
+				1181356029F1411E0084C8DB /* GP-ChatMateUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1181354529F1411D0084C8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1181355229F1411E0084C8DB /* Preview Assets.xcassets in Resources */,
+				1181354F29F1411E0084C8DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355529F1411E0084C8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355F29F1411E0084C8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1181354329F1411D0084C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1181354D29F1411D0084C8DB /* ContentView.swift in Sources */,
+				1181354B29F1411D0084C8DB /* GP_ChatMateApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355329F1411E0084C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1181355C29F1411E0084C8DB /* GP_ChatMateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1181355D29F1411E0084C8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1181356829F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift in Sources */,
+				1181356629F1411E0084C8DB /* GP_ChatMateUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1181355929F1411E0084C8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1181354629F1411D0084C8DB /* GP-ChatMate */;
+			targetProxy = 1181355829F1411E0084C8DB /* PBXContainerItemProxy */;
+		};
+		1181356329F1411E0084C8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1181354629F1411D0084C8DB /* GP-ChatMate */;
+			targetProxy = 1181356229F1411E0084C8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1181356929F1411E0084C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1181356A29F1411E0084C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1181356C29F1411E0084C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GP-ChatMate/Preview Content\"";
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1181356D29F1411E0084C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GP-ChatMate/Preview Content\"";
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMate";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1181356F29F1411E0084C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GP-ChatMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GP-ChatMate";
+			};
+			name = Debug;
+		};
+		1181357029F1411E0084C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMateTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GP-ChatMate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GP-ChatMate";
+			};
+			name = Release;
+		};
+		1181357229F1411E0084C8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GP-ChatMate";
+			};
+			name = Debug;
+		};
+		1181357329F1411E0084C8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GN5XC7NL2T;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.givingbackphilosophy.GP-ChatMateUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GP-ChatMate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1181354229F1411D0084C8DB /* Build configuration list for PBXProject "GP-ChatMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181356929F1411E0084C8DB /* Debug */,
+				1181356A29F1411E0084C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1181356B29F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181356C29F1411E0084C8DB /* Debug */,
+				1181356D29F1411E0084C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1181356E29F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181356F29F1411E0084C8DB /* Debug */,
+				1181357029F1411E0084C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1181357129F1411E0084C8DB /* Build configuration list for PBXNativeTarget "GP-ChatMateUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1181357229F1411E0084C8DB /* Debug */,
+				1181357329F1411E0084C8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1181353F29F1411D0084C8DB /* Project object */;
+}
