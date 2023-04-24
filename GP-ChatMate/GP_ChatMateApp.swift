@@ -11,7 +11,7 @@ import SwiftUI
 struct GP_ChatMateApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ChatView().environmentObject(ChatHelper())
         }
     }
 }
