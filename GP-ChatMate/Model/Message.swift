@@ -14,8 +14,8 @@ struct Message: Hashable {
 }
 
 struct DataSource {
-    static let firstUser = User(name: "AI", avatar: "MeAvatar")
-    static var secondUser = User(name: "Me", avatar: "robot", isCurrentUser: true)
+    static let firstUser = User(name: "AI", avatar: "robot")
+    static var secondUser = User(name: "Me", avatar: "MeAvatar", isCurrentUser: true)
     static let messages = [
         Message(content: "Hi, I really love your templates and I would like to buy the chat template", user: DataSource.firstUser),
         Message(content: "Thanks, nice to hear that, can I have your email please?", user: DataSource.secondUser),
