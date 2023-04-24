@@ -14,6 +14,9 @@
 		1181355C29F1411E0084C8DB /* GP_ChatMateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181355B29F1411E0084C8DB /* GP_ChatMateTests.swift */; };
 		1181356629F1411E0084C8DB /* GP_ChatMateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181356529F1411E0084C8DB /* GP_ChatMateUITests.swift */; };
 		1181356829F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */; };
+		1181357629F141440084C8DB /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181357529F141440084C8DB /* Model.swift */; };
+		1181357929F141AF0084C8DB /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1181357829F141AF0084C8DB /* ContentMessageView.swift */; };
+		11B6D15729F60A7B0020BC39 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B6D15629F60A7B0020BC39 /* MessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		1181356129F1411E0084C8DB /* GP-ChatMateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GP-ChatMateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1181356529F1411E0084C8DB /* GP_ChatMateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateUITests.swift; sourceTree = "<group>"; };
 		1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GP_ChatMateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1181357529F141440084C8DB /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1181357829F141AF0084C8DB /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		11B6D15629F60A7B0020BC39 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,8 @@
 		1181354929F1411D0084C8DB /* GP-ChatMate */ = {
 			isa = PBXGroup;
 			children = (
+				1181357729F141960084C8DB /* View */,
+				1181357429F141330084C8DB /* Model */,
 				1181354A29F1411D0084C8DB /* GP_ChatMateApp.swift */,
 				1181354C29F1411D0084C8DB /* ContentView.swift */,
 				1181354E29F1411E0084C8DB /* Assets.xcassets */,
@@ -125,6 +133,23 @@
 				1181356729F1411E0084C8DB /* GP_ChatMateUITestsLaunchTests.swift */,
 			);
 			path = "GP-ChatMateUITests";
+			sourceTree = "<group>";
+		};
+		1181357429F141330084C8DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1181357529F141440084C8DB /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1181357729F141960084C8DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1181357829F141AF0084C8DB /* ContentMessageView.swift */,
+				11B6D15629F60A7B0020BC39 /* MessageView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1181357629F141440084C8DB /* Model.swift in Sources */,
 				1181354D29F1411D0084C8DB /* ContentView.swift in Sources */,
+				1181357929F141AF0084C8DB /* ContentMessageView.swift in Sources */,
 				1181354B29F1411D0084C8DB /* GP_ChatMateApp.swift in Sources */,
+				11B6D15729F60A7B0020BC39 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
