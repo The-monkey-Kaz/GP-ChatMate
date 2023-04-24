@@ -58,3 +58,9 @@ struct ChatView: View {
         typingMessage = ""
     }
 }
+
+struct ChatView_Previews: PreviewProvider {
+    static var previews: some View {
+            ChatView().environmentObject(ChatHelper())
+    }
+}
