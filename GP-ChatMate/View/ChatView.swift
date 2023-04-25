@@ -26,7 +26,7 @@ struct ChatView: View {
                         VStack(alignment: .leading, spacing: 6) {
                             ForEach(Array(chatHelper.realTimeMessages.enumerated()), id: \.element) {index, msg in
                                 MessageView(currentMessage: msg)
-                                    .id(index) // Assuming your Message model has an 'id' property
+                                    .id(index)
                             }
                         }
                         .padding()
@@ -41,6 +41,9 @@ struct ChatView: View {
                     TextField("Message...", text: $typingMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(minHeight: CGFloat(30))
+                        .onSubmit {
+                            sendMessage()
+                        }
                     Button(action: sendMessage) {
                         Text("Send")
                     }
