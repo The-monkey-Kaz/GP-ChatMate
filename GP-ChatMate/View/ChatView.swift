@@ -38,17 +38,25 @@ struct ChatView: View {
                     }
                 }
                 HStack {
-                    TextField("Message...", text: $typingMessage)
+                    TextField("入力してください...", text: $typingMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(minHeight: CGFloat(30))
                         .onSubmit {
                             sendMessage()
                         }
                     Button(action: sendMessage) {
-                        Text("Send")
+                        Text("送信")
+                            .font(.system(size: 17))
+                            .foregroundColor(Color.white)
+                            .padding(9)
+                            .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
+                            
+                        
+                        
                     }
                 }.frame(minHeight: CGFloat(50)).padding()
-            }.navigationBarTitle(Text(DataSource.firstUser.name), displayMode: .inline)
+            }.navigationBarTitle(Text("GP-ChatMate"), displayMode: .inline)
+                .background(Color("PaleBlue"))
                 .offset(y: -keyboard.currentHeight)
                 .edgesIgnoringSafeArea(keyboard.currentHeight == 0.0 ? .leading: .bottom)
         }.onTapGesture {

@@ -12,7 +12,7 @@ struct MessageView : View {
     var currentMessage: Message
     var body: some View {
         
-        HStack(alignment: .bottom, spacing: 15) {
+        HStack(alignment: .top, spacing: 15) {
             if currentMessage.user.name == "Me" {
                 Image(currentMessage.user.avatar)
                 .resizable()

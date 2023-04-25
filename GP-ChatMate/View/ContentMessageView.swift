@@ -13,7 +13,7 @@ struct ContentMessageView: View {
     var isCurrentUser: Bool
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Text(contentMessage)
                 .padding(10)
                 .foregroundColor(isCurrentUser ? Color.white : Color.black)
