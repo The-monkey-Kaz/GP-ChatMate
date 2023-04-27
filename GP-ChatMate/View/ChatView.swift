@@ -68,8 +68,8 @@ struct ChatView: View {
     
     func sendMessage() {
         chatHelper.sendMessage(Message(content: typingMessage, user: DataSource.secondUser))
-        typingMessage = ""
         sendToGPT()
+        typingMessage = ""
     }
     
     func sendToGPT() {
@@ -79,7 +79,6 @@ struct ChatView: View {
         let task = Task {
             do {
                 let result = try await openAI.sendChat(with: chat)
-                print(result.choices?.first?.message.content ?? "")
                 chatHelper.sendMessage(Message(content: result.choices?.first?.message.content ?? "", user: DataSource.firstUser))
             } catch {
                 print(error)
