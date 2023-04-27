@@ -17,7 +17,7 @@ struct ContentMessageView: View {
             Text(contentMessage)
                 .padding(10)
                 .foregroundColor(isCurrentUser ? Color.white : Color.black)
-                .background(isCurrentUser ? Color.blue : Color(UIColor(red: 240/255, green: 240/255, blue: 240/255, alpha: 1.0)))
+                .background(isCurrentUser ? Color.blue : Color("AI"))
                 .cornerRadius(10)
             if !isCurrentUser {
                 Image("robot")

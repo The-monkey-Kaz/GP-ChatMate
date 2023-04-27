@@ -7,8 +7,10 @@
 //
 
 import SwiftUI
+import OpenAISwift
 
 struct ChatView: View {
+    let openAI = OpenAISwift(authToken: "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")
     @State var typingMessage: String = ""
     @EnvironmentObject var chatHelper: ChatHelper
     @ObservedObject private var keyboard = KeyboardResponder()
@@ -45,33 +47,49 @@ struct ChatView: View {
                             sendMessage()
                         }
                     Button(action: sendMessage) {
-                        Text("送信")
-                            .font(.system(size: 17))
-                            .foregroundColor(Color.white)
-                            .padding(9)
-                            .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
+                            Text("送信")
+                                .font(.system(size: 17))
+                                .foregroundColor(Color.white)
+                                .padding(9)
+                                .background(RoundedRectangle(cornerRadius: 10).foregroundColor(.blue))
                             
-                        
-                        
-                    }
+                            
+                            
+                        }
                 }.frame(minHeight: CGFloat(50)).padding()
             }.navigationBarTitle(Text("GP-ChatMate"), displayMode: .inline)
                 .background(Color("PaleBlue"))
                 .offset(y: -keyboard.currentHeight)
                 .edgesIgnoringSafeArea(keyboard.currentHeight == 0.0 ? .leading: .bottom)
         }.onTapGesture {
-                self.endEditing(true)
+            self.endEditing(true)
         }
     }
     
     func sendMessage() {
         chatHelper.sendMessage(Message(content: typingMessage, user: DataSource.secondUser))
         typingMessage = ""
+        sendToGPT()
     }
-}
-
-struct ChatView_Previews: PreviewProvider {
-    static var previews: some View {
+    
+    func sendToGPT() {
+        let chat: [ChatMessage] = [
+            ChatMessage(role: .system, content: typingMessage),
+        ]
+        let task = Task {
+            do {
+                let result = try await openAI.sendChat(with: chat)
+                print(result.choices?.first?.message.content ?? "")
+                chatHelper.sendMessage(Message(content: result.choices?.first?.message.content ?? "", user: DataSource.firstUser))
+            } catch {
+                print(error)
+            }
+        }
+    }
+    
+    struct ChatView_Previews: PreviewProvider {
+        static var previews: some View {
             ChatView().environmentObject(ChatHelper())
+        }
     }
 }
